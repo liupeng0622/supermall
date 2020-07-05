@@ -1,9 +1,9 @@
 <template>
   <!-- http://152.136.185.210:8000/api/n3 -->
   <div id="app">
-    <!-- <h2>老袁工</h2> -->
-    <!-- <img src="~assets/img/common/20200618.jpg" style="width: 800px" /> -->
-    <router-view></router-view>
+    <keep-alive exclude="Detail">
+      <router-view></router-view>
+    </keep-alive>
     <main-tab-bar></main-tab-bar>
   </div>
 </template>
